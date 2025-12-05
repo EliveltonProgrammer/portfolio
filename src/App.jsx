@@ -345,8 +345,15 @@ export default function App() {
             github: null,
             live: '', // se houver versão online
             icon: <FaServer className="text-3xl mb-2 text-blue-500" />,
-            images: [BASE_PATH +'/images/swbackup1.jpg', '/images/swbackup2.jpg', '/images/swbackup3.jpg', '/images/swbackup4.jpg', '/images/swbackup5.jpg', '/images/swbackup6.jpg'],
-            video: BASE_PATH + '/videos/swbackup.mp4',
+            images: [
+                BASE_PATH + 'images/swbackup1.jpg',
+                BASE_PATH + 'images/swbackup2.jpg',
+                BASE_PATH + 'images/swbackup3.jpg',
+                BASE_PATH + 'images/swbackup4.jpg',
+                BASE_PATH + 'images/swbackup5.jpg',
+                BASE_PATH + 'images/swbackup6.jpg',
+            ],
+            video: BASE_PATH + 'videos/swbackup.mp4',
             level: 'Finalizado'
         },
         {
@@ -425,8 +432,7 @@ export default function App() {
                 BASE_PATH + 'images/reservas6.jpg',
                 BASE_PATH + 'images/reservas7.jpg',
                 BASE_PATH + 'images/reservas8.jpg',
-                BASE_PATH + 'images/reservas9.jpg',
-                BASE_PATH + 'images/reservas10.jpg'
+                BASE_PATH + 'images/reservas9.jpg'
             ],
             video: BASE_PATH + 'videos/reservas.mp4',
             level: 'Finalizado'
@@ -477,7 +483,7 @@ export default function App() {
                     {/* FOTO */}
                     <div className="w-40 h-40 md:w-52 md:h-52 rounded-full overflow-hidden shadow-xl border-4 border-white/20 flex items-center justify-center">
                         <img
-                            src="/foto.jpg"
+                            src={BASE_PATH + "foto.jpg"}
                             alt="Elivelton Almeida"
                             className="min-w-full min-h-full object-cover"
                         />

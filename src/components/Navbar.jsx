@@ -12,6 +12,7 @@ import {
 
 export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const BASE_PATH = import.meta.env.BASE_URL;
 
     const handleScroll = (id) => {
         const section = document.getElementById(id);
@@ -32,7 +33,7 @@ export default function Navbar() {
                 >
                     {/* Logo */}
                     <img
-                        src="/logo.png"
+                        src={BASE_PATH + 'logo.png'}
                         alt="Logo"
                         className="w-8 h-8 mr-2"
                     />
