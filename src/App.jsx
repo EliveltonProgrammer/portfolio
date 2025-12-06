@@ -1012,14 +1012,24 @@ export default function App() {
             {/* Imagem expandida (Lightbox) */}
             {expandedImage && (
                 <div
-                    className="fixed inset-0 bg-black/70 flex items-center justify-center z-[9999]"
+                    className="fixed inset-0 bg-black/80 flex items-center justify-center z-[9999] p-4 overflow-auto"
                     onClick={() => setExpandedImage(null)}
                 >
-                    <img
-                        src={expandedImage}
-                        alt="Imagem ampliada"
-                        className="max-w-3xl max-h-[90vh] rounded shadow-xl"
-                    />
+                    <div className="relative">
+                        <img
+                            src={expandedImage}
+                            alt="Imagem ampliada"
+                            className="w-auto max-w-full h-auto max-h-[95vh] rounded shadow-xl cursor-zoom-in transition-transform duration-200"
+                            onClick={(e) => e.stopPropagation()} // evita fechar ao clicar na imagem
+                        />
+                        {/* Botão de fechar */}
+                        <button
+                            className="absolute top-2 right-2 text-white text-2xl font-bold"
+                            onClick={() => setExpandedImage(null)}
+                        >
+                            &times;
+                        </button>
+                    </div>
                 </div>
             )}
 
