@@ -130,123 +130,140 @@ export default function App() {
 
     const experiencias = [
         {
-            cargo: 'Analista de Sistemas e Desenvolvimento',
-            empresa: 'A. Hansen Restaurant · Freelancer · Projeto internacional',
+            cargo: 'Desenvolvedor .NET',
+            empresa: 'A. Hansen Restaurant · Freelancer',
             periodo: 'maio 2025 - janeiro 2026',
             local: 'Hafnarfjörður, Islândia · Remota',
             pais: 'is', // código ISO do país
-            descricao: `• Desenvolvimento de soluções customizadas para gestão do restaurante, incluindo controle de mesas, 
-            ordens de produção e aplicativo de reservas (App Booking), utilizando C# .NET, ASP.NET Core, ASP.NET Core Web API,
-            Blazor, MVC, HTML e CSS com Razor Pages
-            • Desenvolvimento e implementação de endpoints de API
-            • Integração com API do Twilio (SMS) para envio de notificações a clientes
-            • Implementação de notificações push utilizando Google Firebase
-            • Análise e melhoria de sistemas
-            • Levantamento e documentação de requisitos
-            • Implantação da aplicação em servidor local utilizando Microsoft IIS
-            • Implantação em servidor web dedicado com ambiente .NET (MonsterASP)
-            • Configuração de domínio, subdomínio e certificados SSL`,
-            descricaoLonga: `• Desenvolvimento de soluções customizadas para gestão do restaurante, incluindo controle de mesas, 
-            ordens de produção e aplicativo de reservas (App Booking), utilizando C# .NET, ASP.NET Core, ASP.NET Core Web API,
-            Blazor, MVC, HTML e CSS com Razor Pages
-            • Desenvolvimento e implementação de endpoints de API
-            • Integração com API do Twilio (SMS) para envio de notificações a clientes
-            • Implementação de notificações push utilizando Google Firebase
-            • Análise e melhoria de sistemas
-            • Levantamento e documentação de requisitos
-            • Implantação da aplicação em servidor local utilizando Microsoft IIS
-            • Implantação em servidor web dedicado com ambiente .NET (MonsterASP)
-            • Configuração de domínio, subdomínio e certificados SSL`,
+            descricao: `Análise, sustentação e desenvolvimento de aplicações sob demanda utilizando  tecnologias do ecossistema .NET, 
+            com apoio de ferramentas de IA para otimização de  processos e desenvolvimento de soluções personalizadas conforme as necessidades  do cliente:
+
+            • Gestão de Mesas e Pedidos em .NET 4.8 (Windows Desktop) - Aplicativo multi-plataforma para Gestão de Mesas e Pedidos ASP.NET Core 8.0 + Razor (Blazor Server)
+            • Gestão de Reservas web em ASP.NET Core 8.0 (MVC) 
+            • Aplicativo multi-plataforma de Reservas web em ASP.NET Core 8.0 + Razor (Blazor)
+            • Implementação de arquitetura de microserviços para separação de responsabilidades
+            • Criação e manutenção de APIs REST, Endpoint em ASP.NET Core Web API 
+            • Implementação de autenticação e autorização utilizando JWT (JSON Web Token) para proteção de APIs e controle de acesso aos recursos da aplicação
+            • Modelagem e manipulação de banco de dados SQL Server em nuvem
+            • Análise e implementação de funcionalidades conforme requisitos do cliente
+            • Correção de bugs e melhorias contínuas em sistemas existentes
+            • Integração com serviços externos e APIs (Twilio SMS e Google Firebase)`,
+            descricaoLonga: `Análise, sustentação e desenvolvimento de aplicações sob demanda utilizando  tecnologias do ecossistema .NET, 
+            com apoio de ferramentas de IA para otimização de  processos e desenvolvimento de soluções personalizadas conforme as necessidades  do cliente:
+
+            • Gestão de Mesas e Pedidos em .NET 4.8 (Windows Desktop) - Aplicativo multi-plataforma para Gestão de Mesas e Pedidos ASP.NET Core 8.0 + Razor (Blazor Server)
+            • Gestão de Reservas web em ASP.NET Core 8.0 (MVC) 
+            • Aplicativo multi-plataforma de Reservas web em ASP.NET Core 8.0 + Razor (Blazor)
+            • Implementação de arquitetura de microserviços para separação de responsabilidades
+            • Criação e manutenção de APIs REST, Endpoint em ASP.NET Core Web API 
+            • Implementação de autenticação e autorização utilizando JWT (JSON Web Token) para proteção de APIs e controle de acesso aos recursos da aplicação
+            • Modelagem e manipulação de banco de dados SQL Server em nuvem
+            • Análise e implementação de funcionalidades conforme requisitos do cliente
+            • Correção de bugs e melhorias contínuas em sistemas existentes
+            • Integração com serviços externos e APIs (Twilio SMS e Google Firebase)`,
         },
         {
-            cargo: 'Analista de Sistemas JR',
+            cargo: 'Analista de Sistemas Jr',
             empresa: 'Sitio da Mata',
             periodo: 'setembro 2024 - abril 2025',
             local: 'Tietê-SP · Presencial · Temporário',
             pais: 'br',
-            descricao: `• Desenvolvimento e manutenção de aplicações web (Ecommerce) em HTML, CSS, React, C# e ASP.NET Core, arquitetura MVC e em Camadas 
-            • Criação e consumo de APIs REST para comunicação entre serviços
-            • Levantamento de requisitos
-            • Gestão de backlog e priorização de demandas
-            • Modelagem de sistemas e processos utilizando UML
-            • Execução de testes manuais para validação de funcionalidades e garantia de qualidade`,
-            descricaoLonga: `• Desenvolvimento e manutenção de aplicações web (Ecommerce) em HTML, CSS, React, C# e ASP.NET Core, arquitetura MVC e em Camadas 
-            • Criação e consumo de APIs REST para comunicação entre serviços
-            • Levantamento de requisitos
-            • Gestão de backlog e priorização de demandas
-            • Modelagem de sistemas e processos utilizando UML
-            • Execução de testes manuais para validação de funcionalidades e garantia de qualidade`,
+            descricao: 
+            `• Levantamento e documentação de requisitos 
+            • Análise e especificação de melhorias em módulos, processos e funcionalidades do sistema de  gestão interno e app de negociação de compras entre fornecedores 
+            • Gestão e priorização de backlog, apoiando o planejamento e acompanhamento das demandas de desenvolvimento 
+            • Modelagem de processos, fluxos e casos de uso utilizando UML 
+            • Execução de testes manuais (QA) para validação de funcionalidades e correção de falhas 
+            • Identificação de oportunidades de melhoria em processos e sistemas visando maior eficiência operacional 
+            • Implantação de sistemas realizando parametrizações, configurações e preparação do ambiente para entrada em produção 
+            • Importação e validação de cadastros de produtos, clientes e demais dados necessários para operação do sistema`,
+            descricaoLonga: 
+            `• Levantamento e documentação de requisitos 
+            • Análise e especificação de melhorias em módulos, processos e funcionalidades do sistema de  gestão interno e app de negociação de compras entre fornecedores 
+            • Gestão e priorização de backlog, apoiando o planejamento e acompanhamento das demandas de desenvolvimento 
+            • Modelagem de processos, fluxos e casos de uso utilizando UML 
+            • Execução de testes manuais (QA) para validação de funcionalidades e correção de falhas 
+            • Identificação de oportunidades de melhoria em processos e sistemas visando maior eficiência operacional 
+            • Implantação de sistemas realizando parametrizações, configurações e preparação do ambiente para entrada em produção 
+            • Importação e validação de cadastros de produtos, clientes e demais dados necessários para operação do sistema`,
         },
         {
-            cargo: 'Analista de Suporte e Desenvolvimento PL',
+            cargo: 'Analista de Suporte e Desenvolvimento',
             empresa: 'PPI-Multitask WEG',
             periodo: 'junho 2022 - julho 2024',
             local: 'São Paulo-SP · Remota',
             pais: 'br',
-            descricao: `• Analista N1 soluções PC-Factory MES Industria 4.0 (Manufacturing Execution System)
-            • Desenvolvimento e manutenção de aplicações web e desktop (Industria) em .NET, ASP.NET Core, JavaScript, arquitetura MVC
-            • Desenvolvimento de solução em C# .NET para conversão e migração de dados
-            • Implementação de arquitetura de microserviços para separação de módulos do sistema
-            • Integração entre serviços utilizando RabbitMQ para mensageria e processamento assíncrono
-            • Criação e consumo de APIs REST para comunicação entre serviços
-            • Apoio no desenvolvimento de integração utilizando Web APIs, integrando sistemas Movidesk e ServiceNow
-            • Implementação, manutenção e otimização de consultas em banco de dados SQL Server
-            • Publicação e configuração de aplicações web em Microsoft IIS
-            • Integrações e análise de incidentes , investigação de logs e suporte à correção de problemas em ambiente produção
-            • Execução de testes manuais para validação de funcionalidades`,
-            descricaoLonga: `• Analista N1 soluções PC-Factory MES Industria 4.0 (Manufacturing Execution System)
-            • Desenvolvimento e manutenção de aplicações web e desktop (Industria) em .NET, ASP.NET Core, JavaScript, arquitetura MVC
-            • Desenvolvimento de solução em C# .NET para conversão e migração de dados
-            • Implementação de arquitetura de microserviços para separação de módulos do sistema
-            • Integração entre serviços utilizando RabbitMQ para mensageria e processamento assíncrono
-            • Criação e consumo de APIs REST para comunicação entre serviços
-            • Apoio no desenvolvimento de integração utilizando Web APIs, integrando sistemas Movidesk e ServiceNow
-            • Implementação, manutenção e otimização de consultas em banco de dados SQL Server
-            • Publicação e configuração de aplicações web em Microsoft IIS
-            • Integrações e análise de incidentes , investigação de logs e suporte à correção de problemas em ambiente produção
-            • Execução de testes manuais para validação de funcionalidades`,
+            descricao: 
+           `• Suporte N1 às soluções PC-Factory MES (Manufacturing Execution System), atuando na análise e resolução de incidentes em ambiente industrial 
+            • Atendimento de chamados, diagnóstico de problemas, análise de logs e acompanhamento de correções em ambiente de produção 
+            • Desenvolvimento e manutenção de aplicações em C# .NET para conversão, validação e migração de dados 
+            • Participação na implementação de arquitetura de microserviços para separação de responsabilidades e integração entre sistemas 
+            • Apoio no desenvolvimento e manutenção de integrações via APIs REST entre plataformas corporativas, incluindo Movidesk e ServiceNow 
+            • Consultas e validação de dados em banco SQL Server 
+            • Publicação, configuração e manutenção de aplicações web utilizando Microsoft IIS`,
+            descricaoLonga: 
+            `• Suporte N1 às soluções PC-Factory MES (Manufacturing Execution System), atuando na análise e resolução de incidentes em ambiente industrial 
+            • Atendimento de chamados, diagnóstico de problemas, análise de logs e acompanhamento de correções em ambiente de produção 
+            • Desenvolvimento e manutenção de aplicações em C# .NET para conversão, validação e migração de dados 
+            • Participação na implementação de arquitetura de microserviços para separação de responsabilidades e integração entre sistemas 
+            • Apoio no desenvolvimento e manutenção de integrações via APIs REST entre plataformas corporativas, incluindo Movidesk e ServiceNow 
+            • Consultas e validação de dados em banco SQL Server 
+            • Publicação, configuração e manutenção de aplicações web utilizando Microsoft IIS`,
         },
         {
-            cargo: 'Analista de Suporte e Desenvolvimento JR',
+            cargo: 'Analista de Suporte e Desenvolvimento',
             empresa: 'Um Ponto Dois Software de Gestão',
             periodo: 'setembro 2019 - maio 2022',
             local: 'Laranjal Paulista-SP · Presencial',
             pais: 'br',
-            descricao: `• Desenvolvimento e manutenção de aplicações web e desktop (Comércio e Industria) em NET, ASP.NET Core e GeneXus, arquitetura MVC e em Camadas
-            • Desenvolvimento de solução em C# .NET para automação de backups de bases de dados SQL Server e MySQL
-            • Implementação de arquitetura de microserviços para separação de módulos do sistema
-            • Criação e consumo de APIs REST para comunicação entre serviços
-            • Implementação, manutenção e otimização de consultas em bancos de dados SQL Server, MySQL e PostgreSQL
+            descricao: `• Implantação, parametrização e suporte de sistemas ERP comercial e industrial 
+            • Atendimento e suporte a usuários, análise e resolução de incidentes, identificação de falhas e acompanhamento de chamados 
+            • Treinamento e capacitação de usuários para utilização das aplicações
+            • Levantamento e análise de requisitos para adequação de processos e funcionalidades dos sistemas
+            • Manutenção e evolução de funcionalidades, relatórios e regras de negócio em sistemas desenvolvidos com GeneXus 9 e GeneXus 16 Web
+            • Desenvolvimento e manutenção de aplicação em C# .NET para automação de backups de bancos de dados SQL Server e MySQL
+            • Consultas e validação de dados em bancos SQL Server, MySQL e PostgreSQL
+            • Apoio na identificação e correção de problemas relacionados a banco de dados, integrações e infraestrutura de sistemas
+            • Execução de testes funcionais para validação de novas versões e correções de sistemas
+            • Conversão, migração e validação de dados entre bases de clientes
             • Publicação e configuração de aplicações web em Microsoft IIS
-            • Implantação de sistemas de gestão para comércios e indústrias
-            • Conversão, migração e validação de dados entre bases de clientes`,
-            descricaoLonga: `• Desenvolvimento e manutenção de aplicações web e desktop (Comércio e Industria) em NET, ASP.NET Core e GeneXus, arquitetura MVC e em Camadas
-            • Desenvolvimento de solução em C# .NET para automação de backups de bases de dados SQL Server e MySQL
-            • Implementação de arquitetura de microserviços para separação de módulos do sistema
-            • Criação e consumo de APIs REST para comunicação entre serviços
-            • Implementação, manutenção e otimização de consultas em bancos de dados SQL Server, MySQL e PostgreSQL
+            • Deploy e suporte a aplicações hospedadas em ambientes AWS`,
+            descricaoLonga: 
+            `• Implantação, parametrização e suporte de sistemas ERP comercial e industrial 
+            • Atendimento e suporte a usuários, análise e resolução de incidentes, identificação de falhas e acompanhamento de chamados 
+            • Treinamento e capacitação de usuários para utilização das aplicações
+            • Levantamento e análise de requisitos para adequação de processos e funcionalidades dos sistemas
+            • Manutenção e evolução de funcionalidades, relatórios e regras de negócio em sistemas desenvolvidos com GeneXus 9 e GeneXus 16 Web
+            • Desenvolvimento e manutenção de aplicação em C# .NET para automação de backups de bancos de dados SQL Server e MySQL
+            • Consultas e validação de dados em bancos SQL Server, MySQL e PostgreSQL
+            • Apoio na identificação e correção de problemas relacionados a banco de dados, integrações e infraestrutura de sistemas
+            • Execução de testes funcionais para validação de novas versões e correções de sistemas
+            • Conversão, migração e validação de dados entre bases de clientes
             • Publicação e configuração de aplicações web em Microsoft IIS
-            • Implantação de sistemas de gestão para comércios e indústrias
-            • Conversão, migração e validação de dados entre bases de clientes`,
+            • Deploy e suporte a aplicações hospedadas em ambientes AWS`,
         },
         {
-            cargo: 'Analista de Suporte SR',
+            cargo: 'Analista de Suporte',
             empresa: 'Coam Informática',
             periodo: 'janeiro 2014 - julho 2019',
             local: 'Tietê-SP · Presencial',
             pais: 'br',
-            descricao: `• Implantação e suporte de sistemas para Comércios
-            • Treinamento de usuários
-            • Manutenção em bancos de dados SQL Server, MySQL e PostgreSQL
-            • Conversão, migração e validação de dados entre bases de clientes
-            • Execução de testes manuais para validação de funcionalidades
-            • Suporte técnico em infraestrutura de TI (Hardwares e Redes corporativas)`,
-            descricaoLonga: `• Implantação e suporte de sistemas para Comércios
-            • Treinamento de usuários
-            • Manutenção em bancos de dados SQL Server, MySQL e PostgreSQL
-            • Conversão, migração e validação de dados entre bases de clientes
-            • Execução de testes manuais para validação de funcionalidades
-            • Suporte técnico em infraestrutura de TI (Hardwares e Redes corporativas)`,
+            descricao: 
+            `• Implantação, parametrização e suporte de sistemas de gestão comercial 
+            • Atendimento a usuários, análise e resolução de incidentes relacionados aos sistemas 
+            • Treinamento e capacitação de usuários para utilização das aplicações 
+            • Consultas e validação de dados em bancos MySQL, PostgreSQL e Dbase 
+            • Conversão, migração e validação de dados entre bases de clientes 
+            • Execução de testes funcionais para validação de novas versões e correções de sistemas 
+            • Suporte técnico em infraestrutura TI (Hardware e Redes corporativas)`,
+            descricaoLonga: 
+            `• Implantação, parametrização e suporte de sistemas de gestão comercial 
+            • Atendimento a usuários, análise e resolução de incidentes relacionados aos sistemas 
+            • Treinamento e capacitação de usuários para utilização das aplicações 
+            • Consultas e validação de dados em bancos MySQL, PostgreSQL e Dbase 
+            • Conversão, migração e validação de dados entre bases de clientes 
+            • Execução de testes funcionais para validação de novas versões e correções de sistemas 
+            • Suporte técnico em infraestrutura TI (Hardware e Redes corporativas)`,
         },
         {
             cargo: 'Estagiário de TI',
@@ -254,8 +271,18 @@ export default function App() {
             periodo: 'janeiro 2009 - dezembro 2012',
             local: 'Tietê-SP · Presencial',
             pais: 'br',
-            descricao: `• Suporte técnico em infraestrutura de TI (Hardwares e Redes)`,
-            descricaoLonga: `• Suporte técnico em infraestrutura de TI (Hardwares e Redes)`,
+            descricao: 
+            `• Suporte técnico a usuários em ambiente corporativo e acadêmico
+            • Manutenção preventiva e corretiva de computadores e periféricos
+            • Instalação e configuração de sistemas operacionais e softwares
+            • Suporte em infraestrutura de redes locais e equipamentos de conectividade
+            • Apoio às atividades administrativas e operacionais do setor de TI`,
+            descricaoLonga: 
+            `• Suporte técnico a usuários em ambiente corporativo e acadêmico
+            • Manutenção preventiva e corretiva de computadores e periféricos
+            • Instalação e configuração de sistemas operacionais e softwares
+            • Suporte em infraestrutura de redes locais e equipamentos de conectividade
+            • Apoio às atividades administrativas e operacionais do setor de TI`,
         }
     ]
 
@@ -346,7 +373,7 @@ export default function App() {
         {
             nome: "GeneXus 16/17",
             org: "Udemy",
-            ano: 2021,
+            ano: 2020,
             link: null
         }
     ]
@@ -356,24 +383,24 @@ export default function App() {
             icon: <FaCode className="text-4xl text-blue-500 mx-auto mb-4" />,
             title: "Backend",
             items: ".NET • ASP.NET Core • MVC • Web API • C# • C++ • EF Core • LINQ",
-            level: "70%" // nível de proficiência
+            level: "50%" // nível de proficiência
         },
         {
             icon: <FaLaptopCode className="text-4xl text-blue-500 mx-auto mb-4" />,
             title: "Frontend",
             items: "Windows Forms • Razor Pages • Blazor • HTML • CSS • JavaScript • TypeScript • React",
-            level: "80%"
+            level: "60%"
         },
         {
             icon: <FaDatabase className="text-4xl text-blue-500 mx-auto mb-4" />,
             title: "Banco de Dados",
             items: "SQL Server • MySQL • PostgreSQL • SQLite",
-            level: "100%"
+            level: "90%"
         },
         {
             icon: <FaTools className="text-4xl text-blue-500 mx-auto mb-4" />,
             title: "Ferramentas",
-            items: "Microsoft Visual Studio • VS Code • Git • GitHub • JIRA • Kanban • Movidesk • Servicedesk • ServiceNow",
+            items: "Microsoft Visual Studio • VS Code • Git • GitHub • JIRA • Kanban • Movidesk • Servicedesk",
             level: "100%"
         },
         {
@@ -392,8 +419,14 @@ export default function App() {
         {
             icon: <FaGlobeAmericas className="text-4xl text-blue-500 mx-auto mb-4" />,
             title: "Idiomas",
-            items: "Inglês — estudo contínuo, com foco em leitura técnica e conversação",
-            level: "50%"
+            items: "Inglês - estudo contínuo, com foco em leitura técnica",
+            level: "90%"
+        },
+        {
+            icon: <FaGlobeAmericas className="text-4xl text-blue-500 mx-auto mb-4" />,
+            title: "Idiomas",
+            items: "Inglês - estudo contínuo, com foco em conversação",
+            level: "30%"
         }
     ]
 
@@ -702,14 +735,18 @@ export default function App() {
                         </p>
 
                         <p className="text-gray-300 mb-8 break-words whitespace-normal leading-relaxed">
-                            Profissional de Tecnologia da Informação com mais de 10 anos de experiência,
-                            atuando em desenvolvimento de software, análise de sistemas e suporte técnico
-                            em ambientes corporativos e industriais. Especialista no ecossistema .NET,
-                            com experiência em desenvolvimento Full Stack, criação e integração de APIs,
-                            manipulação e migração de dados e sustentação de aplicações.
-                            Sólida vivência em levantamento de requisitos, modelagem de sistemas, integração
-                            entre plataformas e resolução de incidentes, além de atuação com bancos de dados
-                            relacionais e arquiteturas modernas como MVC e aplicações em camadas.
+                            Profissional de Tecnologia da Informação com mais de 10 anos de experiência em suporte técnico, sustentação de sistemas, 
+                            análise de sistemas e desenvolvimento de software, atuando em ambientes corporativos, industriais e sistemas de gestão ERP. 
+
+                            Sólida experiência no atendimento a usuários, análise e resolução de incidentes, implantação de sistemas,  migração de dados 
+                            e suporte a aplicações corporativas. Também atuei no levantamento de requisitos, análise de processos, modelagem de soluções 
+                            e evolução de sistemas alinhados às  necessidades do negócio.  
+
+                            Na área de desenvolvimento, possuo experiência com tecnologias do ecossistema .NET e GeneXus, participando da criação e manutenção 
+                            de aplicações web e desktop, APIs REST, integrações entre sistemas e manipulação de bancos de dados relacionais. 
+                            
+                            Busco continuar evoluindo na área de desenvolvimento .NET, agregando minha experiência em suporte e análise de sistemas corporativos 
+                            para contribuir com soluções eficientes e de qualidade.
                         </p>
 
                         <div className="flex flex-wrap gap-4 justify-center md:justify-start">
