@@ -723,7 +723,7 @@ export default function App() {
                         <p className="text-xl mb-4">
                             <Typewriter
                                 words={[
-                                    "Desenvolvedor Full Stack .NET",
+                                    "Desenvolvedor .NET Full Stack",
                                     "Analista de Sistemas",
                                     "Especialista em Suporte TI"
                                 ]}
@@ -735,18 +735,16 @@ export default function App() {
                         </p>
 
                         <p className="text-gray-300 mb-8 break-words whitespace-normal leading-relaxed">
-                            Profissional de Tecnologia da Informação com mais de 10 anos de experiência em suporte técnico, sustentação de sistemas, 
-                            análise de sistemas e desenvolvimento de software, atuando em ambientes corporativos, industriais e sistemas de gestão ERP. 
-
-                            Sólida experiência no atendimento a usuários, análise e resolução de incidentes, implantação de sistemas,  migração de dados 
-                            e suporte a aplicações corporativas. Também atuei no levantamento de requisitos, análise de processos, modelagem de soluções 
-                            e evolução de sistemas alinhados às  necessidades do negócio.  
-
-                            Na área de desenvolvimento, possuo experiência com tecnologias do ecossistema .NET e GeneXus, participando da criação e manutenção 
-                            de aplicações web e desktop, APIs REST, integrações entre sistemas e manipulação de bancos de dados relacionais. 
+                            Profissional de Tecnologia da Informação com mais de 10 anos de experiência, atuando em suporte técnico, análise de sistemas, 
+                            implantação e sustentação de sistemas ERP para gestão comercial e industrial.
                             
-                            Busco continuar evoluindo na área de desenvolvimento .NET, agregando minha experiência em suporte e análise de sistemas corporativos 
-                            para contribuir com soluções eficientes e de qualidade.
+                            Experiência em atendimento a usuários, resolução de incidentes, migração de dados, levantamento de requisitos e evolução de 
+                            sistemas alinhados às necessidades do negócio.
+                            
+                            Conhecimentos em tecnologias do ecossistema .NET e GeneXus, atuando na manutenção e desenvolvimento de aplicações web e desktop, 
+                            APIs REST, integrações entre sistemas e bancos de dados relacionais.
+                            
+                            Busco consolidar minha carreira como Desenvolvedor, agregando minha experiência em suporte, análise e desenvolvimento de sistemas para contribuir com soluções eficientes e de qualidade.
                         </p>
 
                         <div className="flex flex-wrap gap-4 justify-center md:justify-start">
