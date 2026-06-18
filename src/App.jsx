@@ -42,7 +42,9 @@ import {
     FaReact,
     FaHtml5,
     FaCss3Alt,
-    FaJs
+    FaJs,
+    FaCogs,
+    FaIndustry
 } from 'react-icons/fa'
 
 import {
@@ -168,8 +170,8 @@ export default function App() {
             periodo: 'setembro 2024 - abril 2025',
             local: 'Tietê-SP · Presencial · Temporário',
             pais: 'br',
-            descricao: 
-            `• Levantamento e documentação de requisitos 
+            descricao:
+                `• Levantamento e documentação de requisitos 
             • Análise e especificação de melhorias em módulos, processos e funcionalidades do sistema de  gestão interno e app de negociação de compras entre fornecedores 
             • Gestão e priorização de backlog, apoiando o planejamento e acompanhamento das demandas de desenvolvimento 
             • Modelagem de processos, fluxos e casos de uso utilizando UML 
@@ -177,8 +179,8 @@ export default function App() {
             • Identificação de oportunidades de melhoria em processos e sistemas visando maior eficiência operacional 
             • Implantação de sistemas realizando parametrizações, configurações e preparação do ambiente para entrada em produção 
             • Importação e validação de cadastros de produtos, clientes e demais dados necessários para operação do sistema`,
-            descricaoLonga: 
-            `• Levantamento e documentação de requisitos 
+            descricaoLonga:
+                `• Levantamento e documentação de requisitos 
             • Análise e especificação de melhorias em módulos, processos e funcionalidades do sistema de  gestão interno e app de negociação de compras entre fornecedores 
             • Gestão e priorização de backlog, apoiando o planejamento e acompanhamento das demandas de desenvolvimento 
             • Modelagem de processos, fluxos e casos de uso utilizando UML 
@@ -193,16 +195,16 @@ export default function App() {
             periodo: 'junho 2022 - julho 2024',
             local: 'São Paulo-SP · Remota',
             pais: 'br',
-            descricao: 
-           `• Suporte N1 às soluções PC-Factory MES (Manufacturing Execution System), atuando na análise e resolução de incidentes em ambiente industrial 
+            descricao:
+                `• Suporte N1 às soluções PC-Factory MES (Manufacturing Execution System), atuando na análise e resolução de incidentes em ambiente industrial 
             • Atendimento de chamados, diagnóstico de problemas, análise de logs e acompanhamento de correções em ambiente de produção 
             • Desenvolvimento e manutenção de aplicações em C# .NET para conversão, validação e migração de dados 
             • Participação na implementação de arquitetura de microserviços para separação de responsabilidades e integração entre sistemas 
             • Apoio no desenvolvimento e manutenção de integrações via APIs REST entre plataformas corporativas, incluindo Movidesk e ServiceNow 
             • Consultas e validação de dados em banco SQL Server 
             • Publicação, configuração e manutenção de aplicações web utilizando Microsoft IIS`,
-            descricaoLonga: 
-            `• Suporte N1 às soluções PC-Factory MES (Manufacturing Execution System), atuando na análise e resolução de incidentes em ambiente industrial 
+            descricaoLonga:
+                `• Suporte N1 às soluções PC-Factory MES (Manufacturing Execution System), atuando na análise e resolução de incidentes em ambiente industrial 
             • Atendimento de chamados, diagnóstico de problemas, análise de logs e acompanhamento de correções em ambiente de produção 
             • Desenvolvimento e manutenção de aplicações em C# .NET para conversão, validação e migração de dados 
             • Participação na implementação de arquitetura de microserviços para separação de responsabilidades e integração entre sistemas 
@@ -228,8 +230,8 @@ export default function App() {
             • Conversão, migração e validação de dados entre bases de clientes
             • Publicação e configuração de aplicações web em Microsoft IIS
             • Deploy e suporte a aplicações hospedadas em ambientes AWS`,
-            descricaoLonga: 
-            `• Implantação, parametrização e suporte de sistemas ERP comercial e industrial 
+            descricaoLonga:
+                `• Implantação, parametrização e suporte de sistemas ERP comercial e industrial 
             • Atendimento e suporte a usuários, análise e resolução de incidentes, identificação de falhas e acompanhamento de chamados 
             • Treinamento e capacitação de usuários para utilização das aplicações
             • Levantamento e análise de requisitos para adequação de processos e funcionalidades dos sistemas
@@ -248,16 +250,16 @@ export default function App() {
             periodo: 'janeiro 2014 - julho 2019',
             local: 'Tietê-SP · Presencial',
             pais: 'br',
-            descricao: 
-            `• Implantação, parametrização e suporte de sistemas de gestão comercial 
+            descricao:
+                `• Implantação, parametrização e suporte de sistemas de gestão comercial 
             • Atendimento a usuários, análise e resolução de incidentes relacionados aos sistemas 
             • Treinamento e capacitação de usuários para utilização das aplicações 
             • Consultas e validação de dados em bancos MySQL, PostgreSQL e Dbase 
             • Conversão, migração e validação de dados entre bases de clientes 
             • Execução de testes funcionais para validação de novas versões e correções de sistemas 
             • Suporte técnico em infraestrutura TI (Hardware e Redes corporativas)`,
-            descricaoLonga: 
-            `• Implantação, parametrização e suporte de sistemas de gestão comercial 
+            descricaoLonga:
+                `• Implantação, parametrização e suporte de sistemas de gestão comercial 
             • Atendimento a usuários, análise e resolução de incidentes relacionados aos sistemas 
             • Treinamento e capacitação de usuários para utilização das aplicações 
             • Consultas e validação de dados em bancos MySQL, PostgreSQL e Dbase 
@@ -271,14 +273,14 @@ export default function App() {
             periodo: 'janeiro 2009 - dezembro 2012',
             local: 'Tietê-SP · Presencial',
             pais: 'br',
-            descricao: 
-            `• Suporte técnico a usuários em ambiente corporativo e acadêmico
+            descricao:
+                `• Suporte técnico a usuários em ambiente corporativo e acadêmico
             • Manutenção preventiva e corretiva de computadores e periféricos
             • Instalação e configuração de sistemas operacionais e softwares
             • Suporte em infraestrutura de redes locais e equipamentos de conectividade
             • Apoio às atividades administrativas e operacionais do setor de TI`,
-            descricaoLonga: 
-            `• Suporte técnico a usuários em ambiente corporativo e acadêmico
+            descricaoLonga:
+                `• Suporte técnico a usuários em ambiente corporativo e acadêmico
             • Manutenção preventiva e corretiva de computadores e periféricos
             • Instalação e configuração de sistemas operacionais e softwares
             • Suporte em infraestrutura de redes locais e equipamentos de conectividade
@@ -419,22 +421,34 @@ export default function App() {
         {
             icon: <FaGlobeAmericas className="text-4xl text-blue-500 mx-auto mb-4" />,
             title: "Idiomas",
-            items: "Inglês - estudo contínuo, com foco em leitura técnica",
+            items: "Inglês - Leitura técnica",
             level: "90%"
         },
         {
             icon: <FaGlobeAmericas className="text-4xl text-blue-500 mx-auto mb-4" />,
             title: "Idiomas",
-            items: "Inglês - estudo contínuo, com foco em conversação",
+            items: "Inglês - Conversação",
             level: "30%"
         }
     ]
 
     const learning = [
-        {
+        /*{
             icon: <FaMobileAlt className="text-4xl text-green-500 mx-auto mb-4" />,
             title: "React Native",
             items: "Desenvolvimento de apps mobile nativos para iOS e Android",
+            level: "Em andamento"
+        },*/
+        {
+            icon: <FaCogs className="text-4xl text-blue-500 mx-auto mb-4" />,
+            title: "Automação Industrial",
+            items: "Integração entre software e processos industriais, sensores, CLPs e monitoramento de produção",
+            level: "Em andamento"
+        },
+        {
+            icon: <FaIndustry className="text-4xl text-orange-500 mx-auto mb-4" />,
+            title: "Sistemas de Execução de Manufatura (MES)",
+            items: "Estudo de sistemas MES para rastreabilidade, controle e acompanhamento da produção em tempo real",
             level: "Em andamento"
         },
         {
@@ -735,15 +749,15 @@ export default function App() {
                         </p>
 
                         <p className="text-gray-300 mb-8 break-words whitespace-normal leading-relaxed">
-                            Profissional de Tecnologia da Informação com mais de 10 anos de experiência, atuando em suporte técnico, análise de sistemas, 
+                            Profissional de Tecnologia da Informação com mais de 10 anos de experiência, atuando em suporte técnico, análise de sistemas,
                             implantação e sustentação de sistemas ERP para gestão comercial e industrial.
-                            
-                            Experiência em atendimento a usuários, resolução de incidentes, migração de dados, levantamento de requisitos e evolução de 
+
+                            Experiência em atendimento a usuários, resolução de incidentes, migração de dados, levantamento de requisitos e evolução de
                             sistemas alinhados às necessidades do negócio.
-                            
-                            Conhecimentos em tecnologias do ecossistema .NET e GeneXus, atuando na manutenção e desenvolvimento de aplicações web e desktop, 
+
+                            Conhecimentos em tecnologias do ecossistema .NET e GeneXus, atuando na manutenção e desenvolvimento de aplicações web e desktop,
                             APIs REST, integrações entre sistemas e bancos de dados relacionais.
-                            
+
                             Busco consolidar minha carreira como Desenvolvedor, agregando minha experiência em suporte, análise e desenvolvimento de sistemas para contribuir com soluções eficientes e de qualidade.
                         </p>
 
