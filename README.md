@@ -1,6 +1,3 @@
-# Projeto Landing Page - Efraim Clube de Férias
-
-Este repositório contém o código-fonte da landing page desenvolvida para a promoção do Efraim Clube de Férias. O objetivo desta página é aquecer leads, informando sobre o prêmio de 4 diárias de praia e apresentando a empresa.
 
 ## Tecnologias Utilizadas
 
@@ -13,7 +10,7 @@ Este repositório contém o código-fonte da landing page desenvolvida para a pr
 ## Estrutura do Projeto
 
 ```
-promocao-circo/
+portfolio/
 ├── public/             # Arquivos estáticos (favicon, etc.)
 ├── src/                # Código-fonte da aplicação
 │   ├── assets/         # Imagens e outros assets
