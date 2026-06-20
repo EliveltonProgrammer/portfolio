@@ -11,8 +11,6 @@ import { Button } from './components/ui/button';
 import Navbar from './components/Navbar';
 import FadeInSection from './components/FadeInSection';
 import Modal from './components/Modal';
-import FloatingButtons from './components/FloatingButtons';
-import Timeline from './components/Timeline';
 
 // Icons - React Icons
 // Font Awesome
@@ -43,9 +41,7 @@ import {
     FaReact,
     FaHtml5,
     FaCss3Alt,
-    FaJs,
-    FaCogs,
-    FaIndustry
+    FaJs
 } from 'react-icons/fa'
 
 import {
@@ -73,11 +69,7 @@ import {
 
 import { motion } from "framer-motion";
 
-import Typewriter from "./components/Typewriter";
 export default function App() {
-
-    const BASE_PATH = import.meta.env.BASE_URL
-
     const [modalOpen, setModalOpen] = useState(false)
     const [selectedProject, setSelectedProject] = useState(null)
 
@@ -85,7 +77,7 @@ export default function App() {
     const [phone, setPhone] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
-
+    const BASE_PATH = import.meta.env.BASE_URL
 
     const validarCamposInterno = () => {
         if (!name.trim() || !phone.trim() || !email.trim() || !message.trim()) {
@@ -136,159 +128,89 @@ export default function App() {
 
     const experiencias = [
         {
-            cargo: 'Desenvolvedor .NET',
-            empresa: 'A. Hansen Restaurant · Freelancer',
-            periodo: 'maio 2025 - janeiro 2026',
-            local: 'Hafnarfjörður, Islândia · Remota',
-            pais: 'is', // código ISO do país
-            descricao: `Análise, sustentação e desenvolvimento de aplicações sob demanda utilizando  tecnologias do ecossistema .NET, 
-            com apoio de ferramentas de IA para otimização de  processos e desenvolvimento de soluções personalizadas conforme as necessidades  do cliente:
-
-            • Gestão de Mesas e Pedidos em .NET 4.8 (Windows Desktop) - Aplicativo multi-plataforma para Gestão de Mesas e Pedidos ASP.NET Core 8.0 + Razor (Blazor Server)
-            • Gestão de Reservas web em ASP.NET Core 8.0 (MVC) 
-            • Aplicativo multi-plataforma de Reservas web em ASP.NET Core 8.0 + Razor (Blazor)
-            • Implementação de arquitetura de microserviços para separação de responsabilidades
-            • Criação e manutenção de APIs REST, Endpoint em ASP.NET Core Web API 
-            • Implementação de autenticação e autorização utilizando JWT (JSON Web Token) para proteção de APIs e controle de acesso aos recursos da aplicação
-            • Modelagem e manipulação de banco de dados SQL Server em nuvem
-            • Análise e implementação de funcionalidades conforme requisitos do cliente
-            • Correção de bugs e melhorias contínuas em sistemas existentes
-            • Integração com serviços externos e APIs (Twilio SMS e Google Firebase)`,
-            descricaoLonga: `Análise, sustentação e desenvolvimento de aplicações sob demanda utilizando  tecnologias do ecossistema .NET, 
-            com apoio de ferramentas de IA para otimização de  processos e desenvolvimento de soluções personalizadas conforme as necessidades  do cliente:
-
-            • Gestão de Mesas e Pedidos em .NET 4.8 (Windows Desktop) - Aplicativo multi-plataforma para Gestão de Mesas e Pedidos ASP.NET Core 8.0 + Razor (Blazor Server)
-            • Gestão de Reservas web em ASP.NET Core 8.0 (MVC) 
-            • Aplicativo multi-plataforma de Reservas web em ASP.NET Core 8.0 + Razor (Blazor)
-            • Implementação de arquitetura de microserviços para separação de responsabilidades
-            • Criação e manutenção de APIs REST, Endpoint em ASP.NET Core Web API 
-            • Implementação de autenticação e autorização utilizando JWT (JSON Web Token) para proteção de APIs e controle de acesso aos recursos da aplicação
-            • Modelagem e manipulação de banco de dados SQL Server em nuvem
-            • Análise e implementação de funcionalidades conforme requisitos do cliente
-            • Correção de bugs e melhorias contínuas em sistemas existentes
-            • Integração com serviços externos e APIs (Twilio SMS e Google Firebase)`,
-        },
-        {
-            cargo: 'Analista de Sistemas Jr',
+            cargo: 'Analista de Sistemas JR',
             empresa: 'Sitio da Mata',
-            periodo: 'setembro 2024 - abril 2025',
-            local: 'Tietê-SP · Presencial · Temporário',
-            pais: 'br',
-            descricao:
-                `• Levantamento e documentação de requisitos 
-            • Análise e especificação de melhorias em módulos, processos e funcionalidades do sistema de  gestão interno e app de negociação de compras entre fornecedores 
-            • Gestão e priorização de backlog, apoiando o planejamento e acompanhamento das demandas de desenvolvimento 
-            • Modelagem de processos, fluxos e casos de uso utilizando UML 
-            • Execução de testes manuais (QA) para validação de funcionalidades e correção de falhas 
-            • Identificação de oportunidades de melhoria em processos e sistemas visando maior eficiência operacional 
-            • Implantação de sistemas realizando parametrizações, configurações e preparação do ambiente para entrada em produção 
-            • Importação e validação de cadastros de produtos, clientes e demais dados necessários para operação do sistema`,
-            descricaoLonga:
-                `• Levantamento e documentação de requisitos 
-            • Análise e especificação de melhorias em módulos, processos e funcionalidades do sistema de  gestão interno e app de negociação de compras entre fornecedores 
-            • Gestão e priorização de backlog, apoiando o planejamento e acompanhamento das demandas de desenvolvimento 
-            • Modelagem de processos, fluxos e casos de uso utilizando UML 
-            • Execução de testes manuais (QA) para validação de funcionalidades e correção de falhas 
-            • Identificação de oportunidades de melhoria em processos e sistemas visando maior eficiência operacional 
-            • Implantação de sistemas realizando parametrizações, configurações e preparação do ambiente para entrada em produção 
-            • Importação e validação de cadastros de produtos, clientes e demais dados necessários para operação do sistema`,
+            periodo: 'set 2024 - abr 2025',
+            local: 'Tietê-SP · Remota · Temporário',
+            descricao: `• Desenvolvimento de aplicações web utilizando HTML, CSS, React, C# e ASP .NET Core
+            • Análise e especificação de requisitos para evolução de sistemas
+            • Execução de testes funcionais e validação de qualidade das aplicações
+            • Gestão de backlog e priorização de demandas em apoio ao time de desenvolvimento
+            • Modelagem de sistemas e processos utilizando diagramas UML`,
+            descricaoLonga: `• Desenvolvimento de aplicações web utilizando HTML, CSS, React, C# e ASP .NET Core
+            • Análise e especificação de requisitos para evolução de sistemas
+            • Execução de testes funcionais e validação de qualidade das aplicações
+            • Gestão de backlog e priorização de demandas em apoio ao time de desenvolvimento
+            • Modelagem de sistemas e processos utilizando diagramas UML
+            • Monitoramento de versões e Testes manuais`,
         },
         {
-            cargo: 'Analista de Suporte e Desenvolvimento',
-            empresa: 'PPI-Multitask WEG',
-            periodo: 'junho 2022 - julho 2024',
+            cargo: 'Analista de Desenvolvimento PL',
+            empresa: 'PPI-Multitask grupo WEG',
+            periodo: 'jun 2022 - jan 2024',
             local: 'São Paulo-SP · Remota',
-            pais: 'br',
-            descricao:
-                `• Suporte N1 às soluções PC-Factory MES (Manufacturing Execution System), atuando na análise e resolução de incidentes em ambiente industrial 
-            • Atendimento de chamados, diagnóstico de problemas, análise de logs e acompanhamento de correções em ambiente de produção 
-            • Desenvolvimento e manutenção de aplicações em C# .NET para conversão, validação e migração de dados 
-            • Participação na implementação de arquitetura de microserviços para separação de responsabilidades e integração entre sistemas 
-            • Apoio no desenvolvimento e manutenção de integrações via APIs REST entre plataformas corporativas, incluindo Movidesk e ServiceNow 
-            • Consultas e validação de dados em banco SQL Server 
-            • Publicação, configuração e manutenção de aplicações web utilizando Microsoft IIS`,
-            descricaoLonga:
-                `• Suporte N1 às soluções PC-Factory MES (Manufacturing Execution System), atuando na análise e resolução de incidentes em ambiente industrial 
-            • Atendimento de chamados, diagnóstico de problemas, análise de logs e acompanhamento de correções em ambiente de produção 
-            • Desenvolvimento e manutenção de aplicações em C# .NET para conversão, validação e migração de dados 
-            • Participação na implementação de arquitetura de microserviços para separação de responsabilidades e integração entre sistemas 
-            • Apoio no desenvolvimento e manutenção de integrações via APIs REST entre plataformas corporativas, incluindo Movidesk e ServiceNow 
-            • Consultas e validação de dados em banco SQL Server 
-            • Publicação, configuração e manutenção de aplicações web utilizando Microsoft IIS`,
+            descricao: `• Atuação como Analista N1 em soluções PC-Factory MES (Manufacturing Execution System) em ambiente industrial
+            • Desenvolvimento de aplicações em C#, .NET e ASP .NET Core para automação de processos e migração de dados entre sistemas
+            • Manipulação e consultas em SQL Server, incluindo validação e análise de dados
+            • Levantamento e análise de requisitos para suporte à implementação e melhoria de funcionalidades
+            • Apoio no desenvolvimento e integração de Web APIs, conectando sistemas Movidesk e ServiceNow
+            • Análise de incidentes e troubleshooting, incluindo investigação de logs e suporte à correção de problemas em produção`,
+            descricaoLonga: `• Atuação como Analista N1 em soluções PC-Factory MES (Manufacturing Execution System) em ambiente industrial
+            • Desenvolvimento de aplicações em C#, .NET e ASP .NET Core para automação de processos e migração de dados entre sistemas
+            • Manipulação e consultas em SQL Server, incluindo validação e análise de dados
+            • Levantamento e análise de requisitos para suporte à implementação e melhoria de funcionalidades
+            • Apoio no desenvolvimento e integração de Web APIs, conectando sistemas Movidesk e ServiceNow
+            • Monitoramento de versões e Testes manuais`,
         },
         {
-            cargo: 'Analista de Suporte e Desenvolvimento',
+            cargo: 'Analista de Desenvolvimento JR',
             empresa: 'Um Ponto Dois Software de Gestão',
-            periodo: 'setembro 2019 - maio 2022',
+            periodo: 'set 2019 - mai 2022',
             local: 'Laranjal Paulista-SP · Presencial',
-            pais: 'br',
-            descricao: `• Implantação, parametrização e suporte de sistemas ERP comercial e industrial 
-            • Atendimento e suporte a usuários, análise e resolução de incidentes, identificação de falhas e acompanhamento de chamados 
-            • Treinamento e capacitação de usuários para utilização das aplicações
-            • Levantamento e análise de requisitos para adequação de processos e funcionalidades dos sistemas
-            • Manutenção e evolução de funcionalidades, relatórios e regras de negócio em sistemas desenvolvidos com GeneXus 9 e GeneXus 16 Web
-            • Desenvolvimento e manutenção de aplicação em C# .NET para automação de backups de bancos de dados SQL Server e MySQL
-            • Consultas e validação de dados em bancos SQL Server, MySQL e PostgreSQL
-            • Apoio na identificação e correção de problemas relacionados a banco de dados, integrações e infraestrutura de sistemas
-            • Execução de testes funcionais para validação de novas versões e correções de sistemas
-            • Conversão, migração e validação de dados entre bases de clientes
-            • Publicação e configuração de aplicações web em Microsoft IIS
-            • Deploy e suporte a aplicações hospedadas em ambientes AWS`,
-            descricaoLonga:
-                `• Implantação, parametrização e suporte de sistemas ERP comercial e industrial 
-            • Atendimento e suporte a usuários, análise e resolução de incidentes, identificação de falhas e acompanhamento de chamados 
-            • Treinamento e capacitação de usuários para utilização das aplicações
-            • Levantamento e análise de requisitos para adequação de processos e funcionalidades dos sistemas
-            • Manutenção e evolução de funcionalidades, relatórios e regras de negócio em sistemas desenvolvidos com GeneXus 9 e GeneXus 16 Web
-            • Desenvolvimento e manutenção de aplicação em C# .NET para automação de backups de bancos de dados SQL Server e MySQL
-            • Consultas e validação de dados em bancos SQL Server, MySQL e PostgreSQL
-            • Apoio na identificação e correção de problemas relacionados a banco de dados, integrações e infraestrutura de sistemas
-            • Execução de testes funcionais para validação de novas versões e correções de sistemas
-            • Conversão, migração e validação de dados entre bases de clientes
-            • Publicação e configuração de aplicações web em Microsoft IIS
-            • Deploy e suporte a aplicações hospedadas em ambientes AWS`,
+            descricao: `• Desenvolvimento e manutenção de aplicações utilizando C#, .NET e GeneXus
+            • Conversão, migração e validação de dados entre bases de clientes e sistemas
+            • Manipulação e consultas em bancos de dados MySQL, SQL Server e PostgreSQL
+            • Análise e resolução de incidentes, incluindo validação de dados e análise de logs
+            • Implantação de sistemas de gestão para comércios e indústrias
+            • Suporte técnico em infraestrutura de TI (hardware, redes, VPN, AWS e bancos de dados).
+            • Treinamento de usuários e apoio na adoção dos sistemas implantados`,
+            descricaoLonga: `• Desenvolvimento e manutenção de aplicações utilizando C#, .NET e GeneXus
+            • Conversão, migração e validação de dados entre bases de clientes e sistemas
+            • Manipulação e consultas em bancos de dados MySQL, SQL Server e PostgreSQL
+            • Análise e resolução de incidentes, incluindo validação de dados e análise de logs
+            • Implantação de sistemas de gestão para comércios e indústrias
+            • Suporte técnico em infraestrutura de TI (hardware, redes, VPN, AWS e bancos de dados).
+            • Monitoramento de versões e Testes manuais`,
         },
         {
-            cargo: 'Analista de Suporte',
+            cargo: 'Analista de Suporte SR',
             empresa: 'Coam Informática',
-            periodo: 'janeiro 2014 - julho 2019',
+            periodo: 'jan 2014 - jul 2019',
             local: 'Tietê-SP · Presencial',
-            pais: 'br',
-            descricao:
-                `• Implantação, parametrização e suporte de sistemas de gestão comercial 
-            • Atendimento a usuários, análise e resolução de incidentes relacionados aos sistemas 
-            • Treinamento e capacitação de usuários para utilização das aplicações 
-            • Consultas e validação de dados em bancos MySQL, PostgreSQL e Dbase 
-            • Conversão, migração e validação de dados entre bases de clientes 
-            • Execução de testes funcionais para validação de novas versões e correções de sistemas 
-            • Suporte técnico em infraestrutura TI (Hardware e Redes corporativas)`,
-            descricaoLonga:
-                `• Implantação, parametrização e suporte de sistemas de gestão comercial 
-            • Atendimento a usuários, análise e resolução de incidentes relacionados aos sistemas 
-            • Treinamento e capacitação de usuários para utilização das aplicações 
-            • Consultas e validação de dados em bancos MySQL, PostgreSQL e Dbase 
-            • Conversão, migração e validação de dados entre bases de clientes 
-            • Execução de testes funcionais para validação de novas versões e correções de sistemas 
-            • Suporte técnico em infraestrutura TI (Hardware e Redes corporativas)`,
+            descricao: `• Suporte e implantação de sistemas de gestão para empresas do setor comercial
+            • Treinamento e capacitação de usuários para utilização e melhor aproveitamento dos sistemas
+            • Manipulação e consultas em bancos de dados MySQL, SQL Server e PostgreSQL
+            • Execução de testes e identificação de melhorias em funcionalidades dos sistemas
+            • Suporte técnico em infraestrutura de TI, incluindo hardware e redes corporativas
+            • Monitoramento de versões e Testes manuais`,
+            descricaoLonga: `• Suporte e implantação de sistemas de gestão para empresas do setor comercial
+            • Treinamento e capacitação de usuários para utilização e melhor aproveitamento dos sistemas
+            • Manipulação e consultas em bancos de dados MySQL, SQL Server e PostgreSQL
+            • Execução de testes e identificação de melhorias em funcionalidades dos sistemas
+            • Suporte técnico em infraestrutura de TI, incluindo hardware e redes corporativas
+            • Monitoramento de versões e Testes manuais`,
         },
         {
             cargo: 'Estagiário de TI',
             empresa: 'Microcamp',
-            periodo: 'janeiro 2009 - dezembro 2012',
+            periodo: 'jan 2009 - dez 2012',
             local: 'Tietê-SP · Presencial',
-            pais: 'br',
-            descricao:
-                `• Suporte técnico a usuários em ambiente corporativo e acadêmico
-            • Manutenção preventiva e corretiva de computadores e periféricos
-            • Instalação e configuração de sistemas operacionais e softwares
-            • Suporte em infraestrutura de redes locais e equipamentos de conectividade
-            • Apoio às atividades administrativas e operacionais do setor de TI`,
-            descricaoLonga:
-                `• Suporte técnico a usuários em ambiente corporativo e acadêmico
-            • Manutenção preventiva e corretiva de computadores e periféricos
-            • Instalação e configuração de sistemas operacionais e softwares
-            • Suporte em infraestrutura de redes locais e equipamentos de conectividade
-            • Apoio às atividades administrativas e operacionais do setor de TI`,
+            descricao: `• Monitoramento e manutenção de redes e computadores em ambiente educacional
+            •	Suporte técnico básico a usuários e equipamentos
+            •	Prevenção de falhas e manutenção preventiva em equipamentos de informática`,
+            descricaoLonga: `• Monitoramento e manutenção de redes e computadores em ambiente educacional
+            •	Suporte técnico básico a usuários e equipamentos
+            •	Prevenção de falhas e manutenção preventiva em equipamentos de informática`,
         }
     ]
 
@@ -296,14 +218,12 @@ export default function App() {
         {
             titulo: "Bacharelado em Engenharia de Software",
             instituicao: "UniCesumar",
-            pais: 'br',
             periodo: "2021 - 2024",
             descricaoLonga: `Formação focada em arquitetura de software, engenharia de requisitos, testes, modelagem, qualidade e desenvolvimento de sistemas completos.`,
         },
         {
             titulo: "Tecnólogo em Análise e Desenvolvimento de Sistemas",
             instituicao: "Universidade Paulista (UNIP)",
-            pais: 'br',
             periodo: "2017 - 2020",
             descricaoLonga: `Base sólida em Analise, programação, estruturas de banco de dados, infraestrutura, lógica aplicada e desenvolvimento de aplicações reais.`,
         }
@@ -311,16 +231,10 @@ export default function App() {
 
     const certificados = [
         {
-            nome: "Power BI",
-            org: "Santander Open Academy",
-            ano: 2026,
-            link: "https://www.linkedin.com/in/eliveltonalmeida/overlay/Certifications/73904681/treasury/?profileId=ACoAAC06FHoB-hfA9tl25JEMzhc153cDA8selNs"
-        },
-        {
             nome: "Web API ASP .NET Core Essencial (.NET 8 / .NET9)",
             org: "Udemy",
             ano: 2025,
-            link: "https://www.linkedin.com/in/eliveltonalmeida/overlay/1758029684592/single-media-viewer/?profileId=ACoAAC06FHoB-hfA9tl25JEMzhc153cDA8selNs"
+            link: "https://www.linkedin.com/in/eliveltonalmeida/overlay/1758029684592/single-media-viewer/?profileId=ACoAAC06FHoB-hfA9tl25JEMzhc153cDA8selNs" // Link do LinkedIn ou imagem
         },
         {
             nome: "Gestão da Qualidade e o Ciclo do Desenvolvimento de Software",
@@ -385,7 +299,7 @@ export default function App() {
         {
             nome: "GeneXus 16/17",
             org: "Udemy",
-            ano: 2020,
+            ano: 2021,
             link: null
         }
     ]
@@ -395,71 +309,46 @@ export default function App() {
             icon: <FaCode className="text-4xl text-blue-500 mx-auto mb-4" />,
             title: "Backend",
             items: ".NET • ASP.NET Core • MVC • Web API • C# • C++ • EF Core • LINQ",
-            level: "50%" // nível de proficiência
+            level: "90%" // <- nível de proficiência
         },
         {
             icon: <FaLaptopCode className="text-4xl text-blue-500 mx-auto mb-4" />,
             title: "Frontend",
             items: "Windows Forms • Razor Pages • Blazor • HTML • CSS • JavaScript • TypeScript • React",
-            level: "60%"
+            level: "80%"
         },
         {
             icon: <FaDatabase className="text-4xl text-blue-500 mx-auto mb-4" />,
             title: "Banco de Dados",
             items: "SQL Server • MySQL • PostgreSQL • SQLite",
-            level: "90%"
-        },
-        {
-            icon: <FaTools className="text-4xl text-blue-500 mx-auto mb-4" />,
-            title: "Ferramentas",
-            items: "Microsoft Visual Studio • VS Code • Git • GitHub • JIRA • Kanban • Movidesk • Servicedesk",
             level: "100%"
         },
         {
             icon: <FaServer className="text-4xl text-blue-500 mx-auto mb-4" />,
             title: "Infraestrutura",
-            items: "Microsoft IIS • Hospedagem • Implantação • Deploy • Configurações ambientes Web • Servidor Dedicado .NET",
-            level: "100%"
+            items: "Microsoft IIS • Hospedagem • Implantação • Deploy • Configuração Web",
+            level: "90%"
         },
         {
             icon: <FaTools className="text-4xl text-blue-500 mx-auto mb-4" />,
-            title: "Suporte Técnico",
-            items: "Suporte técnico em hardware • Redes • Sistemas para Comércios e Industrias • " +
-                "Diagnóstico e troubleshooting de incidentes • Manutenção preventiva/corretiva • Suporte remoto",
-            level: "100%"
-        },
-        {
-            icon: <FaGlobeAmericas className="text-4xl text-blue-500 mx-auto mb-4" />,
-            title: "Idiomas",
-            items: "Inglês - Leitura técnica",
+            title: "Ferramentas",
+            items: "Microsoft Visual Studio • VS Code • Git • GitHub • JIRA • Kanban",
             level: "90%"
         },
         {
             icon: <FaGlobeAmericas className="text-4xl text-blue-500 mx-auto mb-4" />,
             title: "Idiomas",
-            items: "Inglês - Conversação",
-            level: "30%"
+            items: "Inglês — estudo contínuo, com foco em leitura técnica e conversação",
+            level: "40%"
         }
     ]
 
     const learning = [
-        /*{
+        {
             icon: <FaMobileAlt className="text-4xl text-green-500 mx-auto mb-4" />,
             title: "React Native",
             items: "Desenvolvimento de apps mobile nativos para iOS e Android",
-            level: "Em andamento"
-        },*/
-        {
-            icon: <FaCogs className="text-4xl text-blue-500 mx-auto mb-4" />,
-            title: "Automação Industrial",
-            items: "Integração entre software e processos industriais, sensores, CLPs e monitoramento de produção",
-            level: "Em andamento"
-        },
-        {
-            icon: <FaIndustry className="text-4xl text-orange-500 mx-auto mb-4" />,
-            title: "Sistemas de Execução de Manufatura (MES)",
-            items: "Estudo de sistemas MES para rastreabilidade, controle e acompanhamento da produção em tempo real",
-            level: "Em andamento"
+            level: "Próximos aprendizados"
         },
         {
             icon: <FaBookmark className="text-4xl mx-auto mb-4" style={{ color: '#0078D7' }} />,
@@ -680,7 +569,7 @@ export default function App() {
         }
     ]
 
-    /*const projetosFuturos = [
+    const projetosFuturos = [
         {
             title: 'Sistema & App de Alerta em Tempo Real',
             description: 'Sistema de monitoramento de ocorrências em escolas com alertas sonoros, localização do local via GPS, e aplicativo mobile para envio de Alertas, informações importantes e chat.',
@@ -696,7 +585,7 @@ export default function App() {
             images: null,
             level: "Planejamento"
         }
-    ]*/
+    ]
 
     const openModal = (project) => {
         setSelectedProject(project)
@@ -710,9 +599,6 @@ export default function App() {
 
     return (
         <div className="min-h-screen bg-gray-50">
-
-            {/* Botões flutuantes */}
-            <FloatingButtons />
 
             {/* NAVBAR */}
             <Navbar />
@@ -737,38 +623,24 @@ export default function App() {
                     <div className="text-center md:text-left max-w-xl w-full">
 
                         <h1 className="text-5xl font-bold mb-3">
-                            <Typewriter
-                                words={["Elivelton Almeida"]}
-                                typingSpeed={90}
-                                loop={false}
-                            />
+                            Elivelton Almeida
                         </h1>
 
                         <p className="text-xl mb-4">
-                            <Typewriter
-                                words={[
-                                    "Desenvolvedor .NET Full Stack",
-                                    "Analista de Sistemas",
-                                    "Especialista em Suporte TI"
-                                ]}
-                                typingSpeed={70}
-                                deletingSpeed={40}
-                                delay={2000}
-                                loop={true}
-                            />
+                            Desenvolvedor Full Stack .NET | Analista de Sistemas
                         </p>
 
                         <p className="text-gray-300 mb-8 break-words whitespace-normal leading-relaxed">
-                            Profissional de Tecnologia da Informação com mais de 10 anos de experiência, atuando em suporte técnico, análise de sistemas,
-                            implantação e sustentação de sistemas ERP para gestão comercial e industrial.
-
-                            Experiência em atendimento a usuários, resolução de incidentes, migração de dados, levantamento de requisitos e evolução de
-                            sistemas alinhados às necessidades do negócio.
-
-                            Conhecimentos em tecnologias do ecossistema .NET e GeneXus, atuando na manutenção e desenvolvimento de aplicações web e desktop,
-                            APIs REST, integrações entre sistemas e bancos de dados relacionais.
-
-                            Busco consolidar minha carreira como Desenvolvedor, agregando minha experiência em suporte, análise e desenvolvimento de sistemas para contribuir com soluções eficientes e de qualidade.
+                            Profissional de Tecnologia da Informação com 11 anos de experiência em TI, atuando no desenvolvimento
+                            e suporte de sistemas em ambientes corporativos e industriais.
+                            Sou formado em Análise e Desenvolvimento de Sistemas e Engenharia de Software, com experiência no
+                            desenvolvimento de aplicações web e desktop utilizando C#, .NET e ASP.NET Core, além de integração
+                            de sistemas por meio de Web APIs e manipulação de dados em SQL.
+                            Ao longo da minha trajetória atuei como Analista de Sistemas e Analista de Desenvolvimento, participando de
+                            atividades como levantamento de requisitos, análise de incidentes, integração entre sistemas e evolução
+                            de aplicações em produção.
+                            Minha experiência combina análise de sistemas, desenvolvimento e suporte técnico, permitindo compreender
+                            tanto as necessidades do negócio quanto a implementação técnica das soluções
                         </p>
 
                         <div className="flex flex-wrap gap-4 justify-center md:justify-start">
@@ -853,11 +725,6 @@ export default function App() {
                             </div>
 
                             <div className="flex flex-col items-center gap-2 hover:scale-110 transition">
-                                <FaCode className="text-4xl text-purple-500" />
-                                <span>GeneXus</span>
-                            </div>
-
-                            <div className="flex flex-col items-center gap-2 hover:scale-110 transition">
                                 <FaReact className="text-4xl text-cyan-400" />
                                 <span>React</span>
                             </div>
@@ -899,44 +766,206 @@ export default function App() {
                 </section>
             </FadeInSection>
 
-            {/* Experiências */}
-            <Timeline
-                title="Experiências"
-                subtitle="Clique para ver as responsabilidades"
-                icon={<FiBriefcase />}
-                items={experiencias}
-                aberto={aberto}
-                toggle={toggle}
-            />
+            {/* Experiencias */}
+            <FadeInSection>
+                <section id="experiencias" className="py-20 container mx-auto px-4">
+                    <h2 className="text-4xl font-bold text-center mb-12 flex items-center justify-center gap-3">
+                        <FiBriefcase className="text-blue-400" />
+                        Experiências
+                    </h2>
+
+                    {/* Barra Vertical Animada */}
+                    <motion.div
+                        initial={{ opacity: 0, scaleY: 0 }}
+                        whileInView={{ opacity: 1, scaleY: 1 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                        viewport={{ once: true }}
+                        className="relative border-l-2 border-blue-500 ml-4 origin-top"
+                    >
+                        {experiencias.map((exp, index) => (
+                            <div key={index} className="mb-8 ml-6 relative">
+
+                                {/* Bolinha Animada */}
+                                <motion.span
+                                    initial={{ opacity: 0, scale: 0 }}
+                                    whileInView={{ opacity: 1, scale: 1 }}
+                                    transition={{
+                                        duration: 0.4,
+                                        delay: index * 0.15,
+                                        ease: "easeOut"
+                                    }}
+                                    viewport={{ once: true }}
+                                    className="absolute -left-4 top-4 w-4 h-4 bg-blue-500 rounded-full border-2 border-white shadow-md"
+                                ></motion.span>
+
+                                {/* Botão */}
+                                <button
+                                    onClick={() => toggle(index)}
+                                    className="w-full text-left"
+                                >
+                                    <h3 className="text-xl font-semibold flex items-center justify-between">
+                                        {exp.cargo}
+                                        <span
+                                            className={`text-blue-600 text-xl transition-transform duration-300 ${aberto === index ? "rotate-180" : "rotate-0"
+                                                }`}
+                                        >
+                                            <FiChevronDown />
+                                        </span>
+                                    </h3>
+
+                                    <p className="text-sm text-gray-500">
+                                        {exp.empresa} · {exp.periodo} · {exp.local}
+                                    </p>
+                                </button>
+
+                                {/* Conteúdo expandido */}
+                                {aberto === index && (
+                                    <div className="mt-3 p-4 bg-gray-100 rounded-lg shadow-sm border border-gray-300">
+                                        <p className="text-gray-700 whitespace-pre-line">
+                                            {exp.descricaoLonga ||
+                                                "Em breve adicionarei mais detalhes sobre esta experiência."}
+                                        </p>
+                                    </div>
+                                )}
+                            </div>
+                        ))}
+                    </motion.div>
+                </section>
+            </FadeInSection>
 
             {/* Formação */}
-            <Timeline
-                title="Formação"
-                icon={<FiBookOpen />}
-                items={formacoes}
-                aberto={aberto}
-                toggle={toggle}
-            />
+            <FadeInSection>
+                <section id="formacoes" className="py-20 container mx-auto px-4">
+                    <h2 className="text-4xl font-bold text-center mb-12 flex items-center justify-center gap-3">
+                        <FiBookOpen className="text-blue-400" />
+                        Formação
+                    </h2>
+
+                    {/* Barra Vertical Animada */}
+                    <motion.div
+                        initial={{ opacity: 0, scaleY: 0 }}
+                        whileInView={{ opacity: 1, scaleY: 1 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                        viewport={{ once: true }}
+                        className="relative border-l-2 border-blue-500 ml-4 origin-top"
+                    >
+                        {formacoes.map((form, index) => (
+                            <div key={index} className="mb-8 ml-6 relative">
+
+                                {/* Bolinha Animada */}
+                                <motion.span
+                                    initial={{ opacity: 0, scale: 0 }}
+                                    whileInView={{ opacity: 1, scale: 1 }}
+                                    transition={{
+                                        duration: 0.4,
+                                        delay: index * 0.15,
+                                        ease: "easeOut"
+                                    }}
+                                    viewport={{ once: true }}
+                                    className="absolute -left-4 top-4 w-4 h-4 bg-blue-500 rounded-full border-2 border-white shadow-md"
+                                ></motion.span>
+
+                                {/* Botão */}
+                                <button
+                                    onClick={() => toggle(index)}
+                                    className="w-full text-left"
+                                >
+                                    <h3 className="text-xl font-semibold flex items-center justify-between">
+                                        {form.titulo}
+                                        <span
+                                            className={`text-blue-600 text-xl transition-transform duration-300 ${aberto === index ? "rotate-180" : "rotate-0"
+                                                }`}
+                                        >
+                                            <FiChevronDown />
+                                        </span>
+                                    </h3>
+
+                                    <p className="text-sm text-gray-500">
+                                        {form.instituicao} · {form.periodo}
+                                    </p>
+                                </button>
+
+                                {/* Conteúdo expandido */}
+                                {aberto === index && (
+                                    <div className="mt-3 p-4 bg-gray-100 rounded-lg shadow-sm border border-gray-300">
+                                        <p className="text-gray-700 whitespace-pre-line">
+                                            {form.descricaoLonga}
+                                        </p>
+                                    </div>
+                                )}
+                            </div>
+                        ))}
+                    </motion.div>
+                </section>
+            </FadeInSection>
 
             {/* Cursos e Certificados */}
-            <Timeline
-                title="Certificados"
-                icon={<FiAward />}
-                items={certificados}
-                expandable={false}
-            />
+            <FadeInSection>
+                <section id="certificacoes" className="py-20 container mx-auto px-4">
+                    <h2 className="text-4xl font-bold text-center mb-12 flex items-center justify-center gap-3">
+                        <FiAward className="text-blue-400" />
+                        Certificados
+                    </h2>
+
+                    {/* Barra Vertical Animada */}
+                    <motion.div
+                        initial={{ opacity: 0, scaleY: 0 }}
+                        whileInView={{ opacity: 1, scaleY: 1 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                        viewport={{ once: true }}
+                        className="relative border-l-2 border-blue-500 ml-4 origin-top"
+                    >
+                        {certificados.map((cert, index) => (
+                            <div key={index} className="mb-8 ml-6 relative">
+
+                                {/* Bolinha Animada */}
+                                <motion.span
+                                    initial={{ opacity: 0, scale: 0 }}
+                                    whileInView={{ opacity: 1, scale: 1 }}
+                                    transition={{
+                                        duration: 0.4,
+                                        delay: index * 0.15,
+                                        ease: "easeOut"
+                                    }}
+                                    viewport={{ once: true }}
+                                    className="absolute -left-4 top-4 w-4 h-4 bg-blue-500 rounded-full border-2 border-white shadow-md"
+                                ></motion.span>
+
+                                <div>
+                                    <h3 className="text-xl font-semibold flex items-center justify-between">
+                                        {cert.nome}
+
+                                        {/* Botão (abre certificado com ícone) */}
+                                        {cert.link && (
+                                            <a
+                                                href={cert.link}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="text-blue-600 hover:text-blue-800"
+                                            >
+                                                <FaCertificate size={20} />
+                                            </a>
+                                        )}
+                                    </h3>
+
+                                    <p className="text-sm text-gray-500">
+                                        {cert.org} · {cert.ano}
+                                    </p>
+                                </div>
+                            </div>
+                        ))}
+                    </motion.div>
+                </section>
+            </FadeInSection>
 
             {/* Skills com % */}
             <FadeInSection>
                 {(isVisible) => (
                     <section id="skills" className="py-20 container mx-auto px-4">
-                        <div className="flex flex-col items-center gap-1">
-                            <h2 className="text-4xl font-bold flex items-center gap-3">
-                                <FiCpu className="text-blue-400" />
-                                Skills
-                            </h2>
-                            <p className="text-sm text-gray-500 mb-7">Minhas habilidades</p>
-                        </div>
+                        <h2 className="text-4xl font-bold text-center mb-12 flex items-center justify-center gap-3">
+                            <FiCpu className="text-blue-400" />
+                            Skills
+                        </h2>
 
                         <div className="grid md:grid-cols-2 gap-8">
                             {skills.map((skill, index) => (
@@ -973,13 +1002,10 @@ export default function App() {
             {/* Estudando */}
             <FadeInSection>
                 <section id="learning" className="py-20 container mx-auto px-4">
-                    <div className="flex flex-col items-center gap-1">
-                        <h2 className="text-4xl font-bold flex items-center gap-3">
-                            <FaBookOpen className="text-blue-400" />
-                            Aprendizado atual
-                        </h2>
-                        <p className="text-sm text-gray-500 mb-6">Estudando atualmente</p>
-                    </div>
+                    <h2 className="text-4xl font-bold text-center mb-12 flex items-center justify-center gap-3">
+                        <FaBookOpen className="text-green-400" />
+                        Aprendizado atual
+                    </h2>
 
                     <div className="grid md:grid-cols-2 gap-8">
                         {learning.map((item, index) => (
@@ -1008,7 +1034,7 @@ export default function App() {
                             <FaLaptopCode className="text-blue-400" />
                             Projetos
                         </h2>
-                        <p className="text-sm text-gray-500 mb-7">Clique para mais detalhes dos projetos</p>
+                        <p className="text-sm text-gray-500">Clique para saber mais</p>
                     </div>
 
                     <div className="grid md:grid-cols-3 gap-8">
@@ -1085,7 +1111,7 @@ export default function App() {
                     onClose={closeModal}
                     title={selectedProject.title}
                     images={selectedProject.images}
-                    onImageClick={setExpandedImage}   // ENVIA PARA O MODAL
+                    onImageClick={setExpandedImage}   // <<<<< ENVIA PARA O MODAL
                 >
                     <div className="space-y-6">
 
@@ -1221,13 +1247,10 @@ export default function App() {
             {/* Contato */}
             <FadeInSection>
                 <section id="contato" className="py-20 container mx-auto px-4">
-                    <div className="flex flex-col items-center gap-1">
-                        <h2 className="text-4xl font-bold flex items-center gap-3">
-                            <FiMail className="text-blue-400" />
-                            Contato
-                        </h2>
-                        <p className="text-sm text-gray-500 mb-7">Entre em contato comigo</p>
-                    </div>
+                    <h2 className="text-4xl font-bold text-center mb-12 flex items-center justify-center gap-3">
+                        <FiMail className="text-blue-400" />
+                        Contato
+                    </h2>
 
                     <div className="grid md:grid-cols-2 gap-12">
                         <Card className="transition-transform hover:scale-105 hover:shadow-lg">
@@ -1296,49 +1319,36 @@ export default function App() {
 
                                 <li>
                                     <a
-                                        href="https://github.com/elivelton-almeida"
+                                        href="https://github.com/EliveltonProgrammer"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex items-center gap-2 hover:text-white transition-colors"
+                                        className="hover:text-white transition-colors"
                                     >
-                                        <FaGithub />
                                         GitHub
                                     </a>
                                 </li>
 
                                 <li>
                                     <a
-                                        href="https://www.linkedin.com/in/eliveltonalmeida"
+                                        href="https://www.linkedin.com/in/eliveltonalmeida/"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex items-center gap-2 hover:text-white transition-colors"
+                                        className="hover:text-white transition-colors"
                                     >
-                                        <FaLinkedin />
                                         LinkedIn
                                     </a>
                                 </li>
 
-                                <li className="flex flex-col gap-2">
+                                <li>
                                     <a
                                         href="https://drive.google.com/file/d/1wddhVTZA1JKC7GoANBuFLydI53EM9DFz/view?usp=sharing"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex items-center gap-2 hover:text-white transition-colors"
+                                        className="hover:text-white transition-colors"
                                     >
-                                        <FaBookOpen />
-                                        Currículo (PT-BR)
+                                        📄 Baixar Currículo (PDF)
                                     </a>
                                 </li>
-
-                                <a
-                                    href="https://drive.google.com/file/d/1c6smU3mFDXZ425Uo9Pxx-Fmhsg1yl2We/view?usp=sharing"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="flex items-center gap-2 hover:text-white transition-colors"
-                                >
-                                    <FaBookOpen />
-                                    Resume (EN)
-                                </a>
 
                             </ul>
                         </div>
@@ -1349,45 +1359,30 @@ export default function App() {
 
                             <div className="space-y-2 text-gray-400">
 
-                                {/* WhatsApp */}
+                                {/* Telefone → abrir WhatsApp ao clicar */}
                                 <a
                                     href="https://wa.me/5515996697754"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center gap-2 hover:text-white transition-colors"
+                                    className="block hover:text-white transition-colors"
                                 >
-                                    <FaWhatsapp />
-                                    +55 (15) 99669-7754
+                                    📱 (15) 99669-7754
                                 </a>
 
                                 {/* Email */}
                                 <a
                                     href="mailto:eliveltoncarriel.almeida@hotmail.com"
-                                    className="flex items-center gap-2 hover:text-white transition-colors"
+                                    className="block hover:text-white transition-colors"
                                 >
-                                    <FaEnvelope />
-                                    eliveltoncarriel.almeida@hotmail.com
+                                    ✉️ eliveltoncarriel.almeida@hotmail.com
                                 </a>
-
                             </div>
                         </div>
                     </div>
 
                     {/* COPYRIGHT */}
                     <div className="border-t border-gray-800 mt-10 pt-6 text-center text-gray-400">
-                        <p>
-                            &copy; {new Date().getFullYear()} Desenvolvido por Elivelton C. de Almeida
-                        </p>
-
-                        <a
-                            href="https://github.com/elivelton-almeida"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center justify-center gap-2 mt-2 hover:text-white transition-colors"
-                        >
-                            <FaGithub />
-                            Implantado com GitHub Pages
-                        </a>
+                        <p>&copy; {new Date().getFullYear()} Desenvolvido por Elivelton</p>
                     </div>
                 </div>
             </footer>
