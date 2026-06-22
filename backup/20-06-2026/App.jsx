@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 // Components
 import Navbar from "./components/Navbar";
@@ -28,32 +28,7 @@ import {
   FaExternalLinkAlt
 } from "react-icons/fa";
 
-import Lenis from "lenis";
-
 function App() {
-
-  useEffect(() => {
-    const lenis = new Lenis({
-      duration: 1.2,
-      smoothWheel: true,
-      wheelMultiplier: 1,
-    });
-
-    let rafId;
-
-    function raf(time) {
-      lenis.raf(time);
-      rafId = requestAnimationFrame(raf);
-    }
-
-    rafId = requestAnimationFrame(raf);
-
-    return () => {
-      cancelAnimationFrame(rafId);
-      lenis.destroy();
-    };
-  }, []);
-  
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
   const [previewImage, setPreviewImage] = useState(null);
