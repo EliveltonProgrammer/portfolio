@@ -49,7 +49,7 @@ export const tecnologias = [
     color: "#1572B6"
   },
   {
-    Icon: FaDatabase,
+    image: "/images/sqlserver.png",
     label: "SQL Server",
     color: "#CC2927"
   },
