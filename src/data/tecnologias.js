@@ -3,8 +3,7 @@ import {
   FaReact,
   FaJs,
   FaHtml5,
-  FaCss3Alt,
-  FaDatabase
+  FaCss3Alt
 } from "react-icons/fa";
 
 import {
