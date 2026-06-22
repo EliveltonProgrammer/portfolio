@@ -53,7 +53,7 @@ function App() {
       lenis.destroy();
     };
   }, []);
-  
+
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
   const [previewImage, setPreviewImage] = useState(null);
@@ -156,7 +156,7 @@ function App() {
 
             </div>
 
-            {/* PROBLEMA / ABORDAGEM */}
+            {/* AUTOMAÇÃO-PROBLEMA / ABORDAGEM */}
             <div className="grid md:grid-cols-2 gap-4">
 
               <div className="bg-white border rounded-xl p-4">
@@ -166,7 +166,7 @@ function App() {
                 </h3>
 
                 <p className="text-sm text-gray-600">
-                  {selectedProject.problem}
+                  {selectedProject.automation}
                 </p>
               </div>
 
@@ -227,17 +227,38 @@ function App() {
               </div>
             )}
 
-            {/* VÍDEO */}
-            {selectedProject.video && (
+            {/* VÍDEOS (DEMONSTRAÇÃO) */}
+            {(selectedProject.videos?.length > 0 || selectedProject.video) && (
               <div>
                 <h3 className="font-semibold mb-3 flex items-center gap-2">
                   <FaVideo className="text-gray-700" />
-                  Demonstração
+                  Demonstrações
                 </h3>
 
-                <video controls className="w-full rounded-xl border">
-                  <source src={selectedProject.video} />
-                </video>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                  {/* caso novo: array */}
+                  {selectedProject.videos?.map((video, i) => (
+                    <div
+                      key={i}
+                      className="rounded-xl overflow-hidden border bg-black"
+                    >
+                      <video controls className="w-full">
+                        <source src={video} />
+                      </video>
+                    </div>
+                  ))}
+
+                  {/* caso antigo: string única */}
+                  {!selectedProject.videos && selectedProject.video && (
+                    <div className="rounded-xl overflow-hidden border bg-black">
+                      <video controls className="w-full">
+                        <source src={selectedProject.video} />
+                      </video>
+                    </div>
+                  )}
+
+                </div>
               </div>
             )}
 

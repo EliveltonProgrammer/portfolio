@@ -8,13 +8,15 @@ import { FaLaptopCode } from "react-icons/fa";
 import {
   FaServer,
   FaProjectDiagram,
-  FaCloudSun
+  FaCloudSun,
+  FaMicrochip
 } from "react-icons/fa";
 
 const icons = {
   FaServer: <FaServer className="text-3xl mb-2 text-blue-500" />,
   FaProjectDiagram: <FaProjectDiagram className="text-3xl mb-2 text-blue-500" />,
-  FaCloudSun: <FaCloudSun className="text-3xl mb-2 text-blue-500" />
+  FaCloudSun: <FaCloudSun className="text-3xl mb-2 text-blue-500" />,
+  FaMicrochip: <FaMicrochip className="text-3xl mb-2 text-blue-500" />
 };
 
 export default function ProjectsSection({ openModal }) {
