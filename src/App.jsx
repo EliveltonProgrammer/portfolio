@@ -237,23 +237,25 @@ function App() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
-                  {/* caso novo: array */}
-                  {selectedProject.videos?.map((video, i) => (
-                    <div
-                      key={i}
-                      className="rounded-xl overflow-hidden border bg-black"
-                    >
-                      <video controls className="w-full">
-                        <source src={video} />
-                      </video>
-                    </div>
-                  ))}
+                  {/* múltiplos vídeos */}
+                  {selectedProject.videos?.length > 0 &&
+                    selectedProject.videos.map((video, i) => (
+                      <div
+                        key={i}
+                        className="rounded-xl overflow-hidden border bg-black"
+                      >
+                        <video controls className="w-full" preload="metadata">
+                          <source src={video} type="video/mp4" />
+                        </video>
+                      </div>
+                    ))
+                  }
 
-                  {/* caso antigo: string única */}
-                  {!selectedProject.videos && selectedProject.video && (
+                  {/* vídeo único (fallback) */}
+                  {!selectedProject.videos?.length && selectedProject.video && (
                     <div className="rounded-xl overflow-hidden border bg-black">
-                      <video controls className="w-full">
-                        <source src={selectedProject.video} />
+                      <video controls className="w-full" preload="metadata">
+                        <source src={selectedProject.video} type="video/mp4" />
                       </video>
                     </div>
                   )}
