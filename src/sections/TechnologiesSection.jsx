@@ -5,7 +5,7 @@ export default function TechnologiesSection() {
   return (
     <section className="py-28 container mx-auto px-4 bg-gray-50">
 
-      <h2 className="text-3xl font-bold text-gray-800 mb-12 flex items-center justify-center gap-3">
+      <h2 className="text-4xl font-bold text-gray-800 mb-12 flex items-center justify-center gap-3">
         <FaLaptopCode className="text-blue-500" />
         Tecnologias
       </h2>

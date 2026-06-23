@@ -18,9 +18,9 @@ function HeroContent() {
       <p className="text-xl mb-4">
         <FadeTypewriter
           words={[
-            "Desenvolvedor .NET Full Stack",
-            "Analista de Sistemas",
-            "Especialista em Suporte"
+            "Desenvolvedor .NET Jr",
+            "Analista de Sistemas Jr",
+            "Analista de Suporte Sr"
           ]}
         />
       </p>
@@ -55,12 +55,12 @@ function HeroContent() {
 
         <br />
         <br />
-
-        Busco consolidar minha carreira como
-        Desenvolvedor, agregando minha experiência
-        em suporte, análise e desenvolvimento de
-        sistemas para contribuir com soluções
-        eficientes e de qualidade.
+        
+        Busco consolidar minha carreira como Desenvolvedor, 
+        ampliando meus conhecimentos em automação e integrando 
+        minha experiência em suporte, análise e desenvolvimento 
+        de sistemas, com o objetivo de contribuir para a entrega 
+        de soluções eficientes, escaláveis e de alta qualidade.
       </p>
 
       <HeroButtons />
