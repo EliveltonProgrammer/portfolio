@@ -228,7 +228,7 @@ function App() {
             )}
 
             {/* VÍDEOS (DEMONSTRAÇÃO) */}
-            {(selectedProject.videos?.length > 0 || selectedProject.video) && (
+            {selectedProject?.videos?.length > 0 && (
               <div>
                 <h3 className="font-semibold mb-3 flex items-center gap-2">
                   <FaVideo className="text-gray-700" />
@@ -236,31 +236,26 @@ function App() {
                 </h3>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-
-                  {/* múltiplos vídeos */}
-                  {selectedProject.videos?.length > 0 &&
-                    selectedProject.videos.map((video, i) => (
-                      <div
-                        key={i}
-                        className="rounded-xl overflow-hidden border bg-black"
-                      >
-                        <video controls className="w-full" preload="metadata">
-                          <source src={video} type="video/mp4" />
-                        </video>
-                      </div>
-                    ))
-                  }
-
-                  {/* vídeo único (fallback) */}
-                  {!selectedProject.videos?.length && selectedProject.video && (
-                    <div className="rounded-xl overflow-hidden border bg-black">
-                      <video controls className="w-full" preload="metadata">
-                        <source src={selectedProject.video} type="video/mp4" />
+                  {selectedProject.videos.map((video, i) => (
+                    <div
+                      key={i}
+                      className="rounded-xl overflow-hidden border bg-black"
+                    >
+                      <video
+                        key={video}
+                        controls
+                        preload="auto"
+                        playsInline
+                        onError={(e) => console.log("Erro no vídeo:", video, e)}
+                        className="w-full max-h-[350px] object-contain">
+                        <source src={video} type="video/mp4" />
                       </video>
+                      
                     </div>
-                  )}
+                  ))}
 
                 </div>
+
               </div>
             )}
 

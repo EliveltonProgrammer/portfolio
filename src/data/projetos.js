@@ -12,6 +12,7 @@ export const projetos = [
         github: null,
         live: null, // se houver versão online
         icon: "FaServer",
+
         images: [
             import.meta.env.BASE_URL + 'images/swbackup1.jpg',
             import.meta.env.BASE_URL + 'images/swbackup2.jpg',
@@ -20,7 +21,9 @@ export const projetos = [
             import.meta.env.BASE_URL + 'images/swbackup5.jpg',
             import.meta.env.BASE_URL + 'images/swbackup6.jpg'
         ],
-        videos: import.meta.env.BASE_URL + 'videos/swbackup.mp4',
+
+        videos: [],
+
         level: 'Finalizado'
     },
     {
@@ -40,7 +43,7 @@ export const projetos = [
             import.meta.env.BASE_URL + 'images/swmigracao4.jpg',
             import.meta.env.BASE_URL + 'images/swmigracao5.jpg'
         ],
-        videos: import.meta.env.BASE_URL + 'videos/swmigracao.mp4',
+        videos: [],
 
         level: 'Finalizado'
     },
@@ -99,9 +102,9 @@ export const projetos = [
         ],
 
         videos: [
-             import.meta.env.BASE_URL + 'videos/tcc1.mp4',
-             import.meta.env.BASE_URL + 'videos/tcc2.mp4',
-             import.meta.env.BASE_URL + 'videos/tcc3.mp4'
+            import.meta.env.BASE_URL + 'videos/tcc1.mp4',
+            import.meta.env.BASE_URL + 'videos/tcc2.mp4',
+            import.meta.env.BASE_URL + 'videos/tcc3.mp4'
         ],
 
         level: 'Finalizado'
@@ -138,7 +141,10 @@ export const projetos = [
             import.meta.env.BASE_URL + 'images/appmesas10.jpg',
             import.meta.env.BASE_URL + 'images/appmesas11.jpg'
         ],
-        videos: import.meta.env.BASE_URL + 'videos/appmesas.mp4',
+        videos: [
+            import.meta.env.BASE_URL + 'videos/appmesas.mp4'
+        ],
+
         level: 'Finalizado'
     },
     {
@@ -164,7 +170,10 @@ export const projetos = [
             import.meta.env.BASE_URL + 'images/reservas8.jpg',
             import.meta.env.BASE_URL + 'images/reservas9.jpg'
         ],
-        videos: import.meta.env.BASE_URL + 'videos/reservas.mp4',
+        videos: [
+            import.meta.env.BASE_URL + 'videos/reservas.mp4'
+        ],
+
         level: 'Finalizado'
     },
     {
@@ -212,7 +221,9 @@ export const projetos = [
             import.meta.env.BASE_URL + 'images/weathernow8.jpg'
         ],
 
-        videos: import.meta.env.BASE_URL + 'videos/weathernow.mp4',
+        videos: [
+            import.meta.env.BASE_URL + 'videos/weathernow.mp4'
+        ],
 
         level: 'Finalizado'
     },
@@ -255,7 +266,7 @@ export const projetos = [
             import.meta.env.BASE_URL + 'images/weathernow-api5.jpg'
         ],
 
-        videos: null,
+        videos: [],
 
         level: 'Finalizado'
     }

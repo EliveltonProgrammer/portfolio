@@ -1,16 +1,41 @@
+import { useEffect } from "react";
+
 import { FaTimes } from "react-icons/fa";
 
 export default function Modal({ isOpen, onClose, title, children }) {
+    useEffect(() => {
+        document.body.style.overflow = isOpen ? "hidden" : "";
+
+        return () => {
+            document.body.style.overflow = "";
+        };
+    }, [isOpen]);
+
     if (!isOpen) return null;
 
     return (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4">
-
-            <div className="bg-white w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl relative animate-fadeIn">
-
+        <div
+            className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4"
+            onClick={onClose}
+        >
+            <div
+                className="
+    bg-white
+    w-full
+    max-w-4xl
+    h-[90vh]
+    rounded-2xl
+    shadow-2xl
+    flex
+    flex-col
+  "
+                onClick={(e) => e.stopPropagation()}
+            >
                 {/* Header */}
-                <div className="flex items-center justify-between border-b p-4 sticky top-0 bg-white z-10">
-                    <h2 className="text-xl font-bold text-gray-800">{title}</h2>
+                <div className="flex items-center justify-between border-b p-4 shrink-0">
+                    <h2 className="text-xl font-bold text-gray-800">
+                        {title}
+                    </h2>
 
                     <button
                         onClick={onClose}
@@ -21,10 +46,9 @@ export default function Modal({ isOpen, onClose, title, children }) {
                 </div>
 
                 {/* Conteúdo */}
-                <div className="p-6 space-y-6">
+                <div className="flex-1 overflow-y-auto min-h-0 p-6">
                     {children}
                 </div>
-
             </div>
         </div>
     );
