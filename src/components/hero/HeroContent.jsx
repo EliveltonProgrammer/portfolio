@@ -1,4 +1,4 @@
-import { Typewriter } from "react-simple-typewriter";
+import FadeTypewriter from "../FadeTypewriter";
 import HeroButtons from "./HeroButtons";
 
 function HeroContent() {
@@ -12,20 +12,16 @@ function HeroContent() {
       "
     >
       <h1 className="text-5xl font-bold mb-3">
-          Elivelton Almeida
+        Elivelton Almeida
       </h1>
 
       <p className="text-xl mb-4">
-        <Typewriter
+        <FadeTypewriter
           words={[
             "Desenvolvedor .NET Full Stack",
             "Analista de Sistemas",
             "Especialista em Suporte"
           ]}
-          typingSpeed={60}
-          deletingSpeed={60}
-          delay={2000}
-          loop
         />
       </p>
 
