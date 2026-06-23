@@ -102,9 +102,9 @@ export const projetos = [
         ],
 
         videos: [
-            import.meta.env.BASE_URL + 'videos/tcc1.mp4',
-            import.meta.env.BASE_URL + 'videos/tcc2.mp4',
-            import.meta.env.BASE_URL + 'videos/tcc3.mp4'
+            "https://drive.google.com/file/d/1WMkLlXXijTqUyigd17feouE7ozvkXk-K/view?usp=sharing",
+            "https://drive.google.com/file/d/1B9MuNgk-WD50HT6jwOhnW_Bylsq3wqzR/view?usp=sharing",
+            "https://drive.google.com/file/d/1ukKpq5nEkQ_bUvYHBX349YzHUjxL0sQ5/view?usp=sharing"
         ],
 
         level: 'Finalizado'
@@ -142,7 +142,7 @@ export const projetos = [
             import.meta.env.BASE_URL + 'images/appmesas11.jpg'
         ],
         videos: [
-            import.meta.env.BASE_URL + 'videos/appmesas.mp4'
+            "https://drive.google.com/file/d/1elfGhW-xqe255Qwd3bN1ykGm34COcHJs/view?usp=sharing"
         ],
 
         level: 'Finalizado'
@@ -171,7 +171,7 @@ export const projetos = [
             import.meta.env.BASE_URL + 'images/reservas9.jpg'
         ],
         videos: [
-            import.meta.env.BASE_URL + 'videos/reservas.mp4'
+            "https://drive.google.com/file/d/1lLCjqLoe3hWRrMZO6dFhvhiHOH8AmSc3/view?usp=sharing"
         ],
 
         level: 'Finalizado'
@@ -222,7 +222,7 @@ export const projetos = [
         ],
 
         videos: [
-            import.meta.env.BASE_URL + 'videos/weathernow.mp4'
+            "https://drive.google.com/file/d/1ZmJzZgsG2zIbRgs47Y3Vo-55GF2IcUBd/view?usp=sharing"
         ],
 
         level: 'Finalizado'

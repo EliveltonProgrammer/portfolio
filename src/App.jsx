@@ -25,7 +25,8 @@ import {
   FaTools,
   FaImages,
   FaVideo,
-  FaExternalLinkAlt
+  FaExternalLinkAlt,
+  FaPlay
 } from "react-icons/fa";
 
 import Lenis from "lenis";
@@ -229,33 +230,52 @@ function App() {
 
             {/* VÍDEOS (DEMONSTRAÇÃO) */}
             {selectedProject?.videos?.length > 0 && (
-              <div>
+              <div className="mt-6">
                 <h3 className="font-semibold mb-3 flex items-center gap-2">
                   <FaVideo className="text-gray-700" />
                   Demonstrações
                 </h3>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="flex flex-col gap-3">
                   {selectedProject.videos.map((video, i) => (
-                    <div
+                    <button
                       key={i}
-                      className="rounded-xl overflow-hidden border bg-black"
+                      onClick={() => window.open(video, "_blank")}
+                      className="
+            group
+            flex items-center justify-between
+            px-4 py-3
+            rounded-xl
+            border border-gray-200
+            bg-white
+            hover:bg-gray-50
+            hover:border-gray-300
+            transition-all
+            shadow-sm
+          "
                     >
-                      <video
-                        key={video}
-                        controls
-                        preload="auto"
-                        playsInline
-                        onError={(e) => console.log("Erro no vídeo:", video, e)}
-                        className="w-full max-h-[350px] object-contain">
-                        <source src={video} type="video/mp4" />
-                      </video>
-                      
-                    </div>
+                      <div className="flex items-center gap-3">
+                        {/* Ícone play */}
+                        <div className="w-9 h-9 flex items-center justify-center rounded-full bg-red-50 group-hover:bg-red-100 transition">
+                          <FaPlay className="text-red-500 text-sm" />
+                        </div>
+
+                        <div className="flex flex-col">
+                          <span className="font-medium text-gray-800">
+                            Vídeo {i + 1}
+                          </span>
+                          <span className="text-xs text-gray-400">
+                            Demonstração do projeto
+                          </span>
+                        </div>
+                      </div>
+
+                      <span className="text-xs text-gray-500 group-hover:text-gray-700">
+                        Abrir →
+                      </span>
+                    </button>
                   ))}
-
                 </div>
-
               </div>
             )}
 
