@@ -4,7 +4,7 @@ export const learning = [
         title: "Automação Industrial",
         items: "Integração entre software e processos industriais, sensores, CLPs e monitoramento de produção",
         level: "Em andamento",
-        enable: true
+        enable: false
     },
     {
         icon: null,
